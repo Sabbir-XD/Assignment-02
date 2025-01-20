@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.quicksand{
+    font-family: "Quicksand", serif;
+}
+.raleway {
+    font-family: "Raleway", serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a,li,ul,ol{
+    text-decoration: none;
+    list-style: none;
+}
+body{
+
+}
+
+/* shared part style in css start */
+.container{
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.btn-primery{
+    background-color: #FEA301;
+    font-size: 1.25rem;
+    font-weight: 600;
+    font-family: "Quicksand", serif;
+    color: #ffffff;
+    padding: 10px 60px;
+    border-radius: 10px;
+    border: 1px solid #FEA301;
+    transition: all linear .3s;
+}
+
+.btn-primery:hover{
+    background-color: #fff;
+    color: #FEA301;
+    border: 1px solid #FEA301;
+}
+/* shared part style in css end */
+
+
+/* navigation part style in css start*/
+.navbar{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.brand-logo{
+    align-items: center;
+}
+
+.brand-logo img{
+    width: 62px;
+    height: 62px;
+}
+
+.navbar-brand{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #000000;
+    margin-left: 10px;
+}
+
+.navbar-nav .nav-item{
+  margin-right: 32px;
+}
+
+.navbar-nav .nav-item .nav-link{
+    font-size: 1.25rem;
+    font-weight: 500;
+    font-family: "Quicksand", serif;
+}
+
+.toggler-btn{
+    display: none;
+    
+}
+/* navigation part style in css end */
+
+/* hero part style in css start */
+.hero-part{
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.hero-contain{
+    max-width: 631px;
+}
+
+.hero-title{
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #111111;
+    margin-bottom: 26px;
+}
+
+.hero-description{
+    font-size: 1.25rem;
+    color: #111111;
+    margin-bottom: 26px;
+}
+
+.hero-btn{
+    background-color: #111111;
+    font-size: 1.25rem;
+    font-weight: 600;
+    font-family: "Quicksand", serif;
+    color: #ffffff;
+    padding: 10px 47px;
+    border-radius: 10px;
+    border: 1px solid #111111;
+    transition: all linear .3s;
+}
+
+.hero-btn:hover{
+    background-color: #fff;
+    color: #111111;
+    border: 1px solid #111111;
+}
+
+
+.hero-img{
+    width: 468.61px;
+    height: 575px;
+}
+
+/* hero part style in css end */
+
+
+/* mobile device responsive  */
+@media screen and (max-width: 576px) {
+    .navbar{
+      display: none;
+    }
+
+    .hero-part{
+        flex-direction: column-reverse;
+    }
+
+    .hero-contain{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-img{
+        width: 336.58px;
+        height: 413px;
+    }
+}
