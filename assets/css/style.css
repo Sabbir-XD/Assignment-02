@@ -18,15 +18,13 @@ a,li,ul,ol{
     list-style: none;
 }
 body{
-
+  
 }
 
 /* shared part style in css start */
-.container{
-    width: 1160px;
-    margin: 0 auto;
-}
+header{
 
+}
 .d-flex{
     display: flex;
 }
@@ -52,12 +50,17 @@ body{
 
 
 /* navigation part style in css start*/
+header{
+    max-width: 1160px;
+    margin: 0 auto;
+}
 .navbar{
     margin-top: 20px;
     margin-bottom: 20px;
     justify-content: space-between;
     align-items: center;
 }
+
 .brand-logo{
     align-items: center;
 }
@@ -85,14 +88,13 @@ body{
 }
 
 .toggler-btn{
-    display: none;
-    
+    display: none;  
 }
 /* navigation part style in css end */
 
 /* hero part style in css start */
 .hero-part{
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 50px;
 }
@@ -144,7 +146,23 @@ body{
 /* mobile device responsive  */
 @media screen and (max-width: 576px) {
     .navbar{
-      display: none;
+        border-bottom: 1px solid orange;
+        padding:0 20px 20px 20px;
+        justify-content: space-between;
+    }
+    .navbar-brand,
+    .navbar-nav,
+    .btn-primery{
+        display: none;
+    }
+
+    .toggler-btn{
+        display: block;
+    }
+
+    .brand-logo img{
+        width: 46px;
+        height: 46px;
     }
 
     .hero-part{
@@ -152,14 +170,52 @@ body{
     }
 
     .hero-contain{
-        width: 100%;
-        justify-content: center;
-        align-items: center;
+        margin:20px 16px;
+        padding: 10px;
         text-align: center;
     }
 
     .hero-img{
         width: 336.58px;
         height: 413px;
+    }
+
+    .hero-title{
+        font-size: 2rem;
+    }
+
+    .hero-description{
+        font-size: .875rem;
+    }
+
+    .hero-btn{
+        font-size: 1rem;
+        padding: 6px 24px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px){
+    .navbar{
+        padding:0 20px 20px 20px;
+        justify-content: space-between;
+    }
+
+    .navbar-nav,
+    .btn-primery{
+        display: none;
+    }
+
+    .toggler-btn{
+        display: block;
+    }
+
+    .hero-part{
+        flex-direction: column-reverse;
+    }
+
+    .hero-contain{
+        margin:20px 16px;
+        padding: 10px;
+        text-align: center;
     }
 }
