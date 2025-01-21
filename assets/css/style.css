@@ -641,6 +641,8 @@ header{
     .stories-box {
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
+        margin-left: 16.5px;
+        margin-right: 16.5px;
       }
     
       .story-item.large {
