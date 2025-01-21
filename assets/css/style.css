@@ -470,7 +470,6 @@ header{
         padding: 6px 24px;
     }
     
-
     .section-heading{
         padding-top: 40px;
         margin-bottom: 20px;
@@ -518,6 +517,9 @@ header{
      .stories-box {
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
+        margin-left: 16px;
+        margin-right: 16px;
+        gap: 11px;
       }
     
       .story-item.large {
@@ -641,8 +643,6 @@ header{
     .stories-box {
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
-        margin-left: 16.5px;
-        margin-right: 16.5px;
       }
     
       .story-item.large {
