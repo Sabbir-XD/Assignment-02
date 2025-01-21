@@ -242,10 +242,84 @@ header{
  }
  /* Standard Curriculum part in css end */
 
+ /* footer part start in css start */
+ footer{
+    background: skyblue;
+    background: linear-gradient(#A1C4FD ,#C2E9FB);
+    → 
+ }
 
 
+ .footer-contain{
+    max-width: 1070px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 400px 200px 200px;
+    justify-content: space-between;
+    padding: 100px 20px;
+ }
 
+ .fo-title img{
+     width: 82.9px;
+     height: 81.65px;
+ }
 
+ .fo-title span{
+    font-size: 2.63rem;
+    font-weight: 700;
+    line-height: 39.5px;
+    font-family: var(--Quicksand);
+    color: #333;
+    margin-left: 10px;
+    margin-bottom: 20px;
+ }
+
+ .fo-description{
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #333;
+    font-family: var(--Quicksand);
+ }
+
+ .fo-title-2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 30px;
+ }
+
+ .fo-menu li{
+    margin-top: 10px;
+ }
+
+ .fo-menu li a{
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #333;
+    font-family: var(--Quicksand);
+ }
+
+ .fo-title-3{
+    font-size: 1.62rem;
+    font-weight: 700;
+    color: #333;
+    font-family: var(--Quicksand);
+    margin-bottom: 30px;
+ }
+
+ .fo-icon li a img{
+    margin-right: 10px;
+ }
+
+ marquee{
+    font-size: 1.25rem;
+    color: #333;
+ }
+
+ marquee span{
+   color: tomato;
+   font-weight: 700px;
+ }
 
 
 /* mobile device responsive  */
@@ -344,6 +418,54 @@ header{
         font-size: .7rem;
      }
 
+     footer{
+        background: linear-gradient(#09203F, #537895);
+     }
+
+     .footer-contain{
+        padding: 60px 16px;
+        grid-template-columns: 1fr;
+        gap: 30px;
+     }
+
+     .fo-title img{
+        width: 69.2px;
+        height: 69.2px;
+    }
+
+    .fo-title span{
+        font-size: 2.23rem;
+        color: #fff;
+     }
+
+     .fo-description{
+        font-size: 1rem;
+        color: #fff;
+     }
+
+     .fo-title-2{
+        font-size: 1.3rem;
+        color: #FFF;
+        margin-bottom: 20px;
+     }
+
+     .fo-menu li a{
+        font-size: 1.1rem;
+        color: #fff;
+     }
+
+     .fo-title-3{
+        font-size: 1.3rem;
+        color: #FFF;
+        margin-bottom: 20px;
+     }
+
+     marquee{
+        font-size: 1.25rem;
+        color: #FFF;
+     }
+    
+
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px){
@@ -352,13 +474,16 @@ header{
         justify-content: space-between;
     }
 
-    .navbar-nav,
-    .btn-primery{
+    
+    .btn-primery,
+    .toggler-btn{
         display: none;
     }
 
-    .toggler-btn{
-        display: block;
+    .navbar-nav{
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: 60px;
     }
 
     .hero-part{
@@ -370,10 +495,21 @@ header{
         padding: 10px;
         text-align: center;
     }
-
+    
     .curriculum-card-box{
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
+        margin-left: 16.5px;
+        margin-right: 16.5px;
     }
+
+    footer{
+        background: linear-gradient(#BFF098 , #6FD6FF);
+    }
+    .footer-contain{
+        grid-template-columns: repeat(2, 2fr);
+        justify-content: space-between;
+        gap: 30px;
+     }
     
 }
