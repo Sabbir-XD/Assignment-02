@@ -482,6 +482,8 @@ header{
      .curriculum-card-box{
         grid-template-columns: 1fr;
         justify-items: center;
+        margin-left: 16px;
+        margin-right: 16px;
     }
 
      .card-box{
@@ -513,7 +515,7 @@ header{
      .card-read{
         font-size: .7rem;
      }
-     
+
      .stories-box {
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
@@ -527,20 +529,20 @@ header{
       }
 
       .story-item {
-        width: 173.27px;
+        width: 160px;
         height: 179.59px;
       }
 
       .story-date {
         padding: 6px 11px;
-        font-size: .56rem;
+        font-size: .5rem;
         position: absolute;
         bottom: -10px;
         left: 22px;
       }
 
       .story-description {
-        font-size: .56rem;
+        font-size: .5rem;
         padding: 0 32px 0 22px;
         line-height: 17px;
         margin-top: 25px;
